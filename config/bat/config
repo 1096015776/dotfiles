@@ -1,0 +1,7 @@
+--theme="Material-Theme-Palenight"
+
+--style="numbers"
+
+--italic-text=always
+
+--map-syntax .ignore:.gitignore
