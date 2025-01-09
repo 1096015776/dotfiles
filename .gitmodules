@@ -1,0 +1,36 @@
+[submodule "dots/.config/bat/themes/material-theme"]
+	path = dots/.config/bat/themes/material-theme
+	url = https://github.com/equinusocio/material-theme.git
+[submodule "dots/.config/bat/themes/oceanic-next-color-scheme"]
+	path = dots/.config/bat/themes/oceanic-next-color-scheme
+	url = https://github.com/voronianski/oceanic-next-color-scheme
+[submodule "dots/.config/kitty/kitty_grab"]
+	path = dots/.config/kitty/kitty_grab
+	url = https://github.com/yurikhan/kitty_grab.git
+[submodule "dots/.config/zsh/.packages/zsh-z"]
+	path = dots/.config/zsh/.packages/zsh-z
+	url = https://github.com/agkozak/zsh-z.git
+[submodule "dots/.config/zsh/.packages/fast-syntax-highlighting"]
+	path = dots/.config/zsh/.packages/fast-syntax-highlighting
+	url = https://github.com/zdharma-continuum/fast-syntax-highlighting.git
+[submodule "dots/.config/zsh/.packages/zsh-autosuggestions"]
+	path = dots/.config/zsh/.packages/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "dots/.config/zsh/.packages/fzf-tab"]
+	path = dots/.config/zsh/.packages/fzf-tab
+	url = https://github.com/Aloxaf/fzf-tab.git
+[submodule "dots/.config/zsh/.packages/ohmyzsh"]
+	path = dots/.config/zsh/.packages/ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule "dots/.config/zsh/.packages/zsh-completions"]
+	path = dots/.config/zsh/.packages/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
+[submodule "dots/.config/zsh/.packages/gitstatus"]
+	path = dots/.config/zsh/.packages/gitstatus
+	url = https://github.com/romkatv/gitstatus.git
+[submodule "dots/.config/zsh/.packages/zsh-manydots-magic"]
+	path = dots/.config/zsh/.packages/zsh-manydots-magic
+	url = https://github.com/knu/zsh-manydots-magic.git
+[submodule "dots/.config/tmux/plugins/tpm"]
+	path = dots/.config/tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
