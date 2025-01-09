@@ -5,3 +5,5 @@ dots/.config/vue
 dots/.config/lazygit/state.yml
 **/.DS_Store
 .DS_Store
+dots/.config/zsh/.zcompdump
+dots/.config/zsh/.zsh_history
