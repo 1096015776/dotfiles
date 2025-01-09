@@ -25,35 +25,25 @@ pacman-key --init
 pacman-key --populate
 pacman -Syy archlinux-keyring
 # tool
-pacman -S lazygit neovim ranger tmux git-delta zsh npm zip unzip fastfetch
+pacman -S lazygit neovim tmux git-delta zsh npm zip unzip fastfetch bat eza
 # base dev
 pacman -S base-devel openssh
 
 #macos
 # macos dep
 brew install yazi ffmpeg sevenzip jq poppler fd ripgrep fzf zoxide imagemagick font-symbols-only-nerd-font
-# ocr raycast
-brew install raycast
+# ocr 
 brew install tesseract
 # macos wm
 brew tap FelixKratz/formulae
 brew install sketchybar
 brew install --cask font-hack-nerd-font
+brew install --cask raycast
+brew install --cask nikitabobko/tap/aerospace
+ brew tap FelixKratz/formulae
+brew install borders
 # macos software and font
-brew install --cask font-jetbrains-mono-nerd-font
-brew install --cask font-victor-mono
-brew install --cask kitty
-brew install --cask wezterm
-brew install --cask sublime-text
-brew install --cask visual-studio-code
-brew install --cask free-ruler
-brew install --cask flameshot
-brew install --cask notion
-brew install --cask neteasemusic
-brew install --cask wechat
-brew install --cask qq
-brew install --cask google-chrome
-brew install --cask anki
+brew install --cask font-jetbrains-mono-nerd-font font-victor-mono kitty wezterm sublime-text visual-studio-code free-ruler flameshot notion neteasemusic wechat qq google-chrome anki
 ```
 ## windows register
 
