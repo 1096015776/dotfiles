@@ -7,3 +7,4 @@ dots/.config/lazygit/state.yml
 .DS_Store
 dots/.config/zsh/.zcompdump
 dots/.config/zsh/.zsh_history
+dots/.config/tmux/plugins/tmux-*
