@@ -32,6 +32,9 @@ pacman -S base-devel openssh
 #macos
 # macos dep
 brew install yazi ffmpeg sevenzip jq poppler fd ripgrep fzf zoxide imagemagick font-symbols-only-nerd-font
+# ocr raycast
+brew install raycast
+brew install tesseract
 # macos wm
 brew tap FelixKratz/formulae
 brew install sketchybar
@@ -49,6 +52,8 @@ brew install --cask notion
 brew install --cask neteasemusic
 brew install --cask wechat
 brew install --cask qq
+brew install --cask google-chrome
+brew install --cask anki
 ```
 ## windows register
 
