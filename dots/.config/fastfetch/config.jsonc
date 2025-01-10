@@ -5,7 +5,8 @@
         "padding": {
             "top": 2,
             "right": 6
-        }
+        },
+        "color": {"1":"yellow","2":"cyan"}
     },
     "display": {
         "separator": " •  "
