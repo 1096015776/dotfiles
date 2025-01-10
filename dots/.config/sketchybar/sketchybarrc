@@ -51,11 +51,11 @@ iconfont=(
 )
 iconfontlabel=(
 ?
-code
-web
-home
-chat
-music
+js
+os
+'~'
+we
+mu
 ot
 )
 sketchybar --add event aerospace_workspace_change
