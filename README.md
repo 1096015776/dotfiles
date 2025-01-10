@@ -34,6 +34,8 @@ pacman -S base-devel openssh
 brew install yazi ffmpeg sevenzip jq poppler fd ripgrep fzf zoxide imagemagick font-symbols-only-nerd-font
 # ocr 
 brew install tesseract
+brew tap timothyye/tap
+brew install timothyye/tap/ydict
 # macos wm
 brew tap FelixKratz/formulae
 brew install sketchybar
