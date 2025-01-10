@@ -44,6 +44,7 @@ brew install --cask nikitabobko/tap/aerospace
 brew install borders
 # macos software and font
 brew install --cask font-jetbrains-mono-nerd-font font-victor-mono kitty wezterm sublime-text visual-studio-code free-ruler flameshot notion neteasemusic wechat qq google-chrome anki
+brew install anhoder/go-musicfox/go-musicfox
 ```
 ## windows register
 
