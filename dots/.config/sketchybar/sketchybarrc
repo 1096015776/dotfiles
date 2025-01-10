@@ -56,7 +56,7 @@ web
 home
 chat
 music
-other
+ot
 )
 sketchybar --add event aerospace_workspace_change
 for sid in $(aerospace list-workspaces --all); do
