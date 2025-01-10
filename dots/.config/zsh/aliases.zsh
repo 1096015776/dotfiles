@@ -7,7 +7,9 @@ alias tree='tree -a -I .git'
 # Programs
 alias vim='nvim'
 alias v='nvim'
-alias r='ranger'
+alias r='yazi'
+alias yd='ydict'
+alias tm="tmux attach -t code || tmux new -s code"
 if type /Applications/love.app/Contents/MacOS/love > /dev/null; then
   alias love='/Applications/love.app/Contents/MacOS/love'
 fi
