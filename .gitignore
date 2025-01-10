@@ -9,3 +9,4 @@ dots/.config/zsh/.zcompdump
 dots/.config/zsh/.zsh_history
 dots/.config/tmux/plugins/tmux-*
 dots/.config/raycast/extensions
+dots/.config/flameshot
