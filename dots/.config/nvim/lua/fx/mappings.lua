@@ -18,9 +18,6 @@ map("n", "Q", "@@")
 -- Split line with X
 map("n", "X", "<cmd>keeppatterns substitute/\\s*\\%#\\s*/\\r/e <bar> normal! ==^<cr>", { silent = true })
 
--- Split line with X
-map("n", "X", "<cmd>keeppatterns substitute/\\s*\\%#\\s*/\\r/e <bar> normal! ==^<cr>", { silent = true })
-
 -- Navigate merge conflict markers
 map(
   "n",
@@ -71,6 +68,9 @@ map("n", "<localleader>x", "<cmd>quitall<cr>", { silent = true })
 -- Save
 map("n", "<localleader>w", "<cmd>silent w!<cr>", { silent = true })
 map("n", "<localleader>sr", ":%s/\\<<c-r><c-w>\\>/")
+
+map("x", ".", ":normal .<cr>")
+map("x", "@", [[:<c-u>echo "@".getcmdline() | execute ":'<,'>normal @" . nr2char(getchar())<cr>]])
 
 vim.keymap.set("n", "<localleader>ri", function()
   local cursor_position = vim.fn.getcurpos()
