@@ -1,4 +1,5 @@
 local map = vim.keymap.set
+map({ "n", "v" }, "<space>", "<nop>")
 
 -- Store relative line number jumps in the jumplist if they exceed a threshold.
 map("n", "k", '(v:count > 5 ? "m\'" . v:count : "") . "k"', { expr = true })
@@ -57,9 +58,6 @@ map("n", "<s-m-t>", "mT")
 map("n", "<m-t>", "'T")
 
 -- Leader mappings
-
--- Open last buffer
-map("n", "<localleader><localleader>", "<c-^>")
 
 -- Quit the buffer
 map("n", "<localleader>q", "<cmd>quit<cr>", { silent = true })
