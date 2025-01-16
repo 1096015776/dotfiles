@@ -54,9 +54,10 @@ precmd_functions+=(tab_title_precmd)
 source $ZDOTDIR/aliases.zsh
 source $ZDOTDIR/prompt.zsh
 source $ZDOTDIR/completion.zsh
+source $ZDOTDIR/custom_function.zsh
 
 # Wezterm shell integration
-source /Applications/WezTerm.app/Contents/Resources/wezterm.sh
+# source /Applications/WezTerm.app/Contents/Resources/wezterm.sh
 
 # Keybindings
 
