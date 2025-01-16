@@ -14,3 +14,4 @@ vim.opt.clipboard = {
     ["*"] = {},
   },
 }
+vim.g.ai_cmp = false

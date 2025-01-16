@@ -52,13 +52,21 @@ return {
     },
   },
   {
-    "Exafunction/codeium.vim",
-    config = function()
-      vim.g.codeium_no_map_tab = 1
-      vim.keymap.set("i", "<c-g>", function()
-        return vim.fn["codeium#Accept"]()
-      end, { expr = true, silent = true })
-    end,
+    "Exafunction/codeium.nvim",
+    cmd = "Codeium",
+    event = "InsertEnter",
+    build = ":Codeium Auth",
+    opts = {
+      enable_cmp_source = vim.g.ai_cmp,
+      virtual_text = {
+        enabled = not vim.g.ai_cmp,
+        key_bindings = {
+          accept = "<c-g>", -- handled by nvim-cmp / blink.cmp
+          next = "<M-]>",
+          prev = "<M-[>",
+        },
+      },
+    },
   },
   "mattn/emmet-vim",
 }
