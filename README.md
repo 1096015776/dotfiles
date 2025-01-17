@@ -51,6 +51,13 @@ brew install anhoder/go-musicfox/go-musicfox
 download [windows](https://github.com/massgravel/Microsoft-Activation-Scripts) version<br>
 download [wsl-vpn](https://github.com/sakai135/wsl-vpnkit)
 
+## fastfetch config
+
+```shell
+cd ~/.local/share
+git clone https://github.com/LierB/fastfetch
+```
+
 ## resource
 
 my wallpaper and windows-terminal config
