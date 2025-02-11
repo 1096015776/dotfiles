@@ -6,6 +6,7 @@ local Util = require("lazyvim.util")
 
 -- use system copy
 map("v", "<c-c>", '"+y :call system("clip.exe", @+)<cr>', { noremap = true, silent = true })
+map("i", "jk", "<esc>", { noremap = true, silent = true })
 
 -- tmux navigator
 map({ "n", "t" }, "<C-h>", "<CMD>NavigatorLeft<CR>", { desc = "Navigate Left", silent = true })
