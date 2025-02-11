@@ -37,3 +37,6 @@
 [submodule "dots/.config/zsh/.packages/powerlevel10k"]
 	path = dots/.config/zsh/.packages/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "dots/.config/tmux/plugins/nord-tmux"]
+	path = dots/.config/tmux/plugins/nord-tmux
+	url = https://git::@github.com/arcticicestudio/nord-tmux
