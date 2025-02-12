@@ -3,7 +3,7 @@ after-startup-command = [
     # JankyBorders
     # brew tap FelixKratz/formulae
     # brew install borders
-    # 'exec-and-forget borders active_color=0xff8fbcbb inactive_color=0xffeceff4 width=5.0',
+    'exec-and-forget borders active_color=0xff8fbcbb inactive_color=0xffeceff4 width=5.0',
     'exec-and-forget sketchybar'
 ]
 exec-on-workspace-change = ['/bin/bash', '-c',
@@ -59,7 +59,7 @@ inner.horizontal = 12
 inner.vertical =   12
 outer.left =       12
 outer.bottom =     12
-outer.top =        40
+outer.top =        16
 outer.right =      12
 
 # 'main' binding mode declaration
