@@ -56,7 +56,8 @@ config.color_schemes = {
 	["My Kanagawa"] = kanagawa,
 	["Palenightfall"] = palenightfall,
 }
-config.color_scheme = "My Kanagawa"
+-- config.color_scheme = "My Kanagawa"
+config.color_scheme = "nord"
 
 config.font = w.font("Victor Mono", { weight = "Medium" })
 config.font_size = 16
