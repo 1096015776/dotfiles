@@ -13,6 +13,7 @@ return {
         "tsx",
         "typescript",
         "css",
+        "styled",
         "vue",
         "json",
         "json5",
