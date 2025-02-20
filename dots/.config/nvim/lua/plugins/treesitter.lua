@@ -14,6 +14,7 @@ return {
         "typescript",
         "css",
         "styled",
+        "scss",
         "vue",
         "json",
         "json5",
