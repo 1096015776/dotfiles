@@ -1,6 +1,6 @@
 require("bookmarks"):setup({
 	last_directory = { enable = false, persist = false },
-	persist = "vim",
+	persist = "all",
 	desc_format = "full",
 	file_pick_mode = "hover",
 	notify = {
