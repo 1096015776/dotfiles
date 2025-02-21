@@ -20,17 +20,28 @@ return {
             single_file_support = true,
           },
         },
-        volar = {
-          filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
-          init_options = {
-            vue = {
-              hybridMode = false,
-            },
-          },
-        },
       },
       setup = {},
     },
+    init = function()
+      local vue_language_server_path =
+        "~/.local/share/nvim/mason/packages/vue-language-server/node_modules/@vue/language-server"
+      local lspconfig = require("lspconfig")
+      lspconfig.ts_ls.setup({
+        init_options = {
+          plugins = {
+            {
+              name = "@vue/typescript-plugin",
+              location = vue_language_server_path,
+              languages = { "vue" },
+            },
+          },
+        },
+        filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+      })
+      -- No need to set `hybridMode` to `true` as it's the default value
+      lspconfig.volar.setup({})
+    end,
   },
   {
     "williamboman/mason.nvim",
@@ -49,7 +60,7 @@ return {
         "biome",
         "prettier",
         "typescript-language-server",
-        "vetur-vls",
+        -- "vetur-vls",
         -- markdown
         "markdownlint",
         "marksman",
