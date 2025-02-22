@@ -108,4 +108,4 @@ compdef _directories take
 if [[ "$OPEN_PROJECT" == 1 ]]; then
     source $HOME/dotfiles/bin/project
 fi
-source ~/.zprofile
+# source ~/.zprofile
