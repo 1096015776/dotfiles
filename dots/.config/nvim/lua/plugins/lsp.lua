@@ -56,14 +56,18 @@ return {
         -- frontend
         "html-lsp",
         "css-lsp",
+        "json-lsp",
         "eslint-lsp",
-        "biome",
         "prettier",
-        "typescript-language-server",
+        "vtsls",
+        -- "biome",
+        -- "typescript-language-server",
         -- "vetur-vls",
+
         -- markdown
         "markdownlint",
         "marksman",
+
         -- docker
         "hadolint",
         "codelldb",
