@@ -7,6 +7,7 @@ lib.dirname = function(get_cwd, context)
   end
   if string.find(context.line, "@") then
     context.line = string.gsub(context.line, "'", "")
+    context.line = string.gsub(context.line, ";", "")
     context.line = string.gsub(context.line, '"', "")
     context.line = string.gsub(context.line, ".*@", "./src")
     get_cwd = function()
