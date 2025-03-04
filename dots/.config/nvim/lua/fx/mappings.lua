@@ -69,7 +69,7 @@ map("n", "<localleader>w", "<cmd>silent w!<cr>", { silent = true })
 map("n", "<localleader>sr", ":%s/\\<<c-r><c-w>\\>/")
 map("n", "<localleader>,", ":s/,/,\\r/g<cr>", { silent = true })
 map("n", "<localleader>,", ":s/,/,\\r/g<cr>", { silent = true })
-map("n", "<localleader> ", ":s/\\s/ \\r/g<cr>", { silent = true })
+map("n", "<localleader> ", ":s/\\(\\S\\s\\)/\\1\\r/g<cr>", { silent = true })
 
 map("x", ".", ":normal .<cr>")
 map("x", "@", [[:<c-u>echo "@".getcmdline() | execute ":'<,'>normal @" . nr2char(getchar())<cr>]])
