@@ -11,10 +11,13 @@ return {
           "typescript",
         },
       },
-      codelens = {
-        enabled = false,
-      },
       servers = {
+        codelens = {
+          enabled = false,
+        },
+        eslint = {
+          enabled = false,
+        },
         tsserver = {
           enabled = false,
         },
@@ -152,6 +155,7 @@ return {
         "eslint-lsp",
         "prettier",
         "vtsls",
+        "tailwindcss-language-server",
         -- "biome",
         -- "typescript-language-server",
         -- "vetur-vls",
