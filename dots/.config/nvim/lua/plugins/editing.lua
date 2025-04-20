@@ -41,6 +41,7 @@ return {
 
   {
     "echasnovski/mini.ai",
+    enabled = false,
     dependencies = { "nvim-treesitter/nvim-treesitter-textobjects" },
     config = function()
       local treesitter = require("mini.ai").gen_spec.treesitter
