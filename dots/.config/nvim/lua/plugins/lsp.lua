@@ -156,6 +156,7 @@ return {
         "prettier",
         "vtsls",
         "tailwindcss-language-server",
+        "vue-language-server",
         -- "biome",
         -- "typescript-language-server",
         -- "vetur-vls",
