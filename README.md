@@ -32,7 +32,7 @@ pacman -S base-devel openssh
 #macos
 # macos dep
 brew install yazi ffmpeg sevenzip jq poppler fd ripgrep fzf zoxide imagemagick font-symbols-only-nerd-font
-# ocr 
+# ocr
 brew install tesseract
 # macos wm
 brew tap FelixKratz/formulae
@@ -44,8 +44,10 @@ brew install --cask nikitabobko/tap/aerospace
 brew install borders
 # macos software and font
 brew install --cask font-jetbrains-mono-nerd-font font-victor-mono kitty wezterm sublime-text visual-studio-code free-ruler flameshot notion neteasemusic wechat qq google-chrome anki
+brew install --cask json-viewer
 brew install anhoder/go-musicfox/go-musicfox
 ```
+
 ## windows register
 
 download [windows](https://github.com/massgravel/Microsoft-Activation-Scripts) version<br>
@@ -63,8 +65,11 @@ git clone https://github.com/LierB/fastfetch
 my wallpaper and windows-terminal config
 
 ## tip
+
 I have a mklinks zsh to move dotfile<br>
+
 ### search text
+
 ```shell
 grep -rh '<el-'|awk -F el- '{print $2}'|awk -F ' ' '{print$1}'|sort|uniq
 ```
