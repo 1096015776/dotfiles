@@ -83,6 +83,9 @@ map("n", "<leader>a", function()
   vim.fn.setreg("a", "")
 end)
 map("i", "<c-a>", "<c-r>A")
+-- <++> 查找替换
+map("i", "<c-l>", "<esc>/<++><cr>c4l")
+map("i", "<c-h>","<esc>?<++><cr>c4l")
 
 vim.keymap.set("n", "<localleader>ri", function()
   local cursor_position = vim.fn.getcurpos()
