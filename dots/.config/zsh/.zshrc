@@ -108,4 +108,6 @@ compdef _directories take
 if [[ "$OPEN_PROJECT" == 1 ]]; then
     source $HOME/dotfiles/bin/project
 fi
+# 存在local文件则source local文件
+[[ -f ~/.config/zsh/local.zsh ]] && source ~/.config/zsh/local.zsh
 # source ~/.zprofile

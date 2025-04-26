@@ -3,9 +3,12 @@
 
 vim.api.nvim_set_hl(0, "StatusLine", { bg = "#31363F" })
 
--- require("fx.cmp-path-alias")
 
 require("gitsigns").setup({
   signs_staged_enable = false,
   current_line_blame = true,
 })
+
+vim.api.nvim_create_user_command("RemoveComments", function()
+  vim.cmd("%s/\\/\\/.*//g")
+end, {})

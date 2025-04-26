@@ -41,7 +41,7 @@ return {
     {
       "<leader>fe",
       function()
-        require("neo-tree.command").execute({ toggle = true, dir = LazyVim.root() })
+        require("neo-tree.command").execute({ toggle = true, dir = LazyVim.root(), reveal = true })
       end,
       desc = "Explorer NeoTree (Root Dir)",
     },
