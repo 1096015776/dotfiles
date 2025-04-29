@@ -1,14 +1,43 @@
 return {
   {
-    "navarasu/onedark.nvim",
+    "akinsho/bufferline.nvim",
+    -- disable diagnostics
+    opts = {
+      options = {
+        diagnostics = false,
+        style_preset = "minimal",
+        buffer_close_icon = "󰅖",
+        modified_icon = "● ",
+        close_icon = "󰅖",
+        separator_style = "thick",
+        sort_by = "directory",
+        hover = {
+          enabled = true,
+          delay = 200,
+          reveal = { "close" },
+        },
+      },
+    },
+  },
+  {
+    "olimorris/onedarkpro.nvim",
+    priority = 1000, -- Ensure it loads first
     config = function()
-      require("onedark").setup({
-        code_style = {
+      require("onedarkpro").setup({
+        styles = {
+          types = "NONE",
+          methods = "NONE",
+          numbers = "NONE",
+          strings = "NONE",
           comments = "italic",
-          keywords = "bold,italic",
+          keywords = "italic",
+          constants = "NONE",
           functions = "italic",
-          strings = "none",
-          variables = "none",
+          operators = "NONE",
+          variables = "NONE",
+          parameters = "NONE",
+          conditionals = "italic",
+          virtual_text = "NONE",
         },
       })
     end,
