@@ -12,3 +12,5 @@ require("gitsigns").setup({
 vim.api.nvim_create_user_command("RemoveComments", function()
   vim.cmd("%s/\\/\\/.*//g")
 end, {})
+
+-- require('fx.snippets.vue')
