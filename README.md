@@ -46,6 +46,10 @@ brew install borders
 brew install --cask font-jetbrains-mono-nerd-font font-victor-mono kitty wezterm sublime-text visual-studio-code free-ruler flameshot notion neteasemusic wechat qq google-chrome anki
 brew install --cask json-viewer
 brew install anhoder/go-musicfox/go-musicfox
+
+brew install azhuchkov/tools/tunblkctl
+brew install ical-buddy
+brew install --cask font-sketchybar-app-font
 ```
 
 ## windows register

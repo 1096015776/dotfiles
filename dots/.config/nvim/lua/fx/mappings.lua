@@ -55,8 +55,8 @@ map("n", "<s-m-r>", "mR")
 map("n", "<m-r>", "'R")
 map("n", "<s-m-s>", "mS")
 map("n", "<m-s>", "'S")
-map("n", "<s-m-t>", "mT")
-map("n", "<m-t>", "'T")
+map("n", "<s-m-u>", "mU")
+map("n", "<m-u>", "'U")
 
 -- Leader mappings
 
