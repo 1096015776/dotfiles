@@ -76,9 +76,7 @@ alt-8 = 'workspace 8'
 alt-9 = 'workspace 9'
 alt-0 = 'workspace 0'
 alt-t = 'workspace Terminal'
-alt-p = 'workspace Spotify'
 alt-b = 'workspace Browser'
-# alt-f = 'workspace Figma'
 
 alt-shift-1 = ['move-node-to-workspace 1', 'workspace 1']
 alt-shift-2 = ['move-node-to-workspace 2', 'workspace 2']
@@ -91,9 +89,7 @@ alt-shift-8 = ['move-node-to-workspace 8', 'workspace 8']
 alt-shift-9 = ['move-node-to-workspace 9', 'workspace 9']
 alt-shift-0 = ['move-node-to-workspace 0', 'workspace 0']
 alt-shift-t = ['move-node-to-workspace Terminal', 'workspace Terminal']
-alt-shift-p = ['move-node-to-workspace Spotify', 'workspace Spotify']
 alt-shift-b = ['move-node-to-workspace Browser', 'workspace Browser']
-alt-shift-f = ['move-node-to-workspace Figma', 'workspace Figma']
 
 alt-tab = 'workspace-back-and-forth'
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
