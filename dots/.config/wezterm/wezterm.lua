@@ -11,8 +11,14 @@ if w.config_builder then
 	config = w.config_builder()
 end
 
--- config.term = "wezterm"
+config.term = "wezterm"
 config.front_end = "WebGpu"
+config.window_padding = {
+  left = 0,
+  right = 0,
+  top = 0,
+  bottom = 0,
+}
 
 -- Appearance
 
@@ -60,8 +66,8 @@ config.color_schemes = {
 config.color_scheme = "nord"
 
 config.font = w.font("Victor Mono", { weight = "Medium" })
-config.font_size = 16
-config.line_height = 1.55
+config.font_size = 14
+config.line_height = 1.2
 config.strikethrough_position = "0.5cell"
 
 config.hide_tab_bar_if_only_one_tab = true
