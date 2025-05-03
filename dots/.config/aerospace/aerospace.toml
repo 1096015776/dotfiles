@@ -56,6 +56,7 @@ alt-h = 'focus left'
 alt-j = 'focus down'
 alt-k = 'focus up'
 alt-l = 'focus right'
+alt-q = 'close'
 
 alt-shift-h = 'move left'
 alt-shift-j = 'move down'
@@ -167,6 +168,26 @@ run = 'move-node-to-workspace Browser'
 [[on-window-detected]]
 if.app-id = 'com.tinyspeck.slackmacgap'
 run = 'move-node-to-workspace Slack'
+
+[[on-window-detected]]
+if.app-id = 'com.netease.163music'
+run = 'move-node-to-workspace Music'
+
+[[on-window-detected]]
+if.app-id = 'com.google.Chrome'
+run = 'move-node-to-workspace Browser'
+
+[[on-window-detected]]
+if.app-id = 'net.kovidgoyal.kitty'
+run = 'move-node-to-workspace Terminal'
+
+[[on-window-detected]]
+if.app-id = 'com.github.wez.wezterm'
+run = 'move-node-to-workspace Terminal'
+
+[[on-window-detected]]
+if.app-id = 'com.alibaba.DingTalkMac'
+run = ['layout floating','move-node-to-workspace DingTalk']
 
 
 [workspace-to-monitor-force-assignment]
