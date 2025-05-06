@@ -1,6 +1,6 @@
 {
   "Function Component": {
-    "prefix": "f",
+    "prefix": "cf",
     "scope": "typescript",
     "body": [
       "const ${1:name} = (${2:params}) => {",
@@ -10,7 +10,7 @@
     "description": "TS箭头函数组件"
   },
   "Vue TS Component": {
-    "prefix": "comp",
+    "prefix": "vc",
     "scope": "typescript",
     "body": [
       "<template>",
@@ -27,7 +27,7 @@
     "description": "Vue3组件模板（TS + SCSS模块）"
   },
   "Define Props": {
-    "prefix": "p",
+    "prefix": "dp",
     "scope": "typescript",
     "body": [
       "const props = defineProps<{",
@@ -37,7 +37,7 @@
     "description": "定义组件Props"
   },
   "Define Emits": {
-    "prefix": "e",
+    "prefix": "de",
     "scope": "typescript",
     "body": [
       "const emit = defineEmits<{",
@@ -47,7 +47,7 @@
     "description": "定义组件事件"
   },
   "Computed Fuction": {
-    "prefix": "computed",
+    "prefix": "dc",
     "scope": "typescript",
     "body": [
       "const $1 = computed(() => {",
@@ -57,7 +57,7 @@
     "description": "计算函数"
   },
   "Vue Ref": {
-    "prefix": "r",
+    "prefix": "dr",
     "scope":"typescript",
     "body": [
       "const $1 = ref($2)$0"
