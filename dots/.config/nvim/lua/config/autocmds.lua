@@ -19,13 +19,13 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
 
 -- 每打开一个vue文件时自动执行set foldexpr=nvim_treesitter#foldexpr() 命令
 
-vim.api.nvim_create_autocmd({ "BufReadPost" }, {
-  pattern = { "*.vue" },
-  callback = function()
-    vim.defer_fn(function()
-    vim.opt.foldmethod = "expr"
-    vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-    end, 1500)
-  end,
-})
+-- vim.api.nvim_create_autocmd({ "BufReadPost" }, {
+--   pattern = { "*.vue" },
+--   callback = function()
+--     vim.defer_fn(function()
+--     vim.opt.foldmethod = "expr"
+--     vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+--     end, 1500)
+--   end,
+-- })
 

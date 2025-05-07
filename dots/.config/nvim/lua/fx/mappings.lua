@@ -70,6 +70,10 @@ map("n", "<localleader>sr", ":%s/\\<<c-r><c-w>\\>/")
 map("n", "<localleader>,", ":s/,/,\\r/g<cr>", { silent = true })
 map("n", "<localleader>,", ":s/,/,\\r/g<cr>", { silent = true })
 map("n", "<localleader> ", ":s/\\(\\S\\s\\)/\\1\\r/g<cr>", { silent = true })
+map("n", "<localleader>z", function()
+  vim.opt.foldmethod = "expr"
+  vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+end, { silent = true })
 map("v", "<localleader> ", ":s/\\(\\S\\s\\)/\\1\\r/g<cr>", { silent = true })
 map("v", "<localleader>,", ":s/,/,\\r/g<cr>", { silent = true })
 
@@ -85,7 +89,7 @@ end)
 map("i", "<c-a>", "<c-r>A")
 -- <++> 查找替换
 map("i", "<c-l>", "<esc>/<++><cr>c4l")
-map("i", "<c-h>","<esc>?<++><cr>c4l")
+map("i", "<c-h>", "<esc>?<++><cr>c4l")
 
 vim.keymap.set("n", "<localleader>ri", function()
   local cursor_position = vim.fn.getcurpos()
