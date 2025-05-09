@@ -1,7 +1,7 @@
 -- change lualineColor
 -- vim.api.nvim_set_hl(0, "StatusLine", { bg = "#2A2A37" })
 
-vim.api.nvim_set_hl(0, "StatusLine", { bg = "#23262C" })
+-- vim.api.nvim_set_hl(0, "StatusLine", { bg = "#23262C" })
 
 
 require("gitsigns").setup({
