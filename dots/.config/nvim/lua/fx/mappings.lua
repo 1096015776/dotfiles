@@ -49,6 +49,17 @@ end, {
   desc = "Disable current line lint rule",
 })
 
+map("n", "<leader>tb", function()
+  require("alternate-toggler").toggleAlternate()
+end)
+map("n", "<localleader>lg", function()
+  require("logsitter").log()
+end)
+-- experimental visual mode
+map("x", "<localleader>lg", function()
+  require("logsitter").log_visual()
+end)
+
 map("n", "<s-m-a>", "mA")
 map("n", "<m-a>", "'A")
 map("n", "<s-m-r>", "mR")
