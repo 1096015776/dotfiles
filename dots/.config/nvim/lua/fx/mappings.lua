@@ -11,14 +11,19 @@ map("n", "'", "`")
 map("n", "`", "'")
 
 -- Repurpose arrow keys for quickfix list movement
-map("n", "<up>", "<cmd>cprevious<cr>", { silent = true })
-map("n", "<down>", "<cmd>cnext<cr>", { silent = true })
+map("n", "<up>", "<cmd>cprevious<cr>", { silent = true, desc = "Previous quickfix" })
+map("n", "<down>", "<cmd>cnext<cr>", { silent = true, desc = "Next quickfix" })
 
 -- Ex-mode is weird and not useful so it seems better to repeat the last macro
-map("n", "Q", "@@")
+map("n", "Q", "@@", { silent = true, desc = "Repeat last macro" })
 
 -- Split line with X
-map("n", "X", "<cmd>keeppatterns substitute/\\s*\\%#\\s*/\\r/e <bar> normal! ==^<cr>", { silent = true })
+map(
+  "n",
+  "X",
+  "<cmd>keeppatterns substitute/\\s*\\%#\\s*/\\r/e <bar> normal! ==^<cr>",
+  { silent = true, desc = "Split line with X" }
+)
 
 -- Navigate merge conflict markers
 map(
@@ -35,8 +40,8 @@ map(
 )
 
 -- Navigate loclist
-map("n", "]l", "<cmd>lnext<cr>", { silent = true })
-map("n", "[l", "<cmd>lprev<cr>", { silent = true })
+map("n", "]l", "<cmd>lnext<cr>", { silent = true, desc = "Next loclist" })
+map("n", "[l", "<cmd>lprev<cr>", { silent = true, desc = "Previous loclist" })
 
 -- Paste without populating the yank register
 -- map("x", "<leader>p", '"_dP')
@@ -49,9 +54,21 @@ end, {
   desc = "Disable current line lint rule",
 })
 
+map("n", "<leader>t", function()
+  require("which-key").show()
+end, {
+  desc = "Toggle Settings",
+})
+
 map("n", "<leader>tb", function()
   require("alternate-toggler").toggleAlternate()
-end)
+end, {
+  desc = "Toggle boolean",
+})
+-- Toggle zoom
+Snacks.toggle.zoom():map("<leader>wm"):map("<leader>2")
+map("n", "5", "<cmd>!open -R %<cr>", { silent = true, desc = "Open in finder" })
+
 map("n", "<localleader>lg", function()
   require("logsitter").log()
 end)
@@ -72,19 +89,18 @@ map("n", "<m-u>", "'U")
 -- Leader mappings
 
 -- Quit the buffer
-map("n", "<localleader>q", "<cmd>quit<cr>", { silent = true })
+map("n", "<localleader>q", "<cmd>quit<cr>", { silent = true, desc = "quit buffer" })
 -- Quit Vim without closing windows (useful for keeping a session)
-map("n", "<localleader>x", "<cmd>quitall<cr>", { silent = true })
+map("n", "<localleader>x", "<cmd>quitall<cr>", { silent = true, desc = "quit Vim" })
 -- Save
-map("n", "<localleader>w", "<cmd>silent w!<cr>", { silent = true })
+map("n", "<localleader>w", "<cmd>silent w!<cr>", { silent = true, desc = "save" })
 map("n", "<localleader>sr", ":%s/\\<<c-r><c-w>\\>/")
-map("n", "<localleader>,", ":s/,/,\\r/g<cr>", { silent = true })
-map("n", "<localleader>,", ":s/,/,\\r/g<cr>", { silent = true })
-map("n", "<localleader> ", ":s/\\(\\S\\s\\)/\\1\\r/g<cr>", { silent = true })
+map("n", "<localleader>,", ":s/,/,\\r/g<cr>", { silent = true, desc = "add new line after comma" })
+map("n", "<localleader> ", ":s/\\(\\S\\s\\)/\\1\\r/g<cr>", { silent = true, desc = "add new line after word" })
 map("n", "<localleader>z", function()
   vim.opt.foldmethod = "expr"
   vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-end, { silent = true })
+end, { silent = true, desc = "enable treesitter fold" })
 map("v", "<localleader> ", ":s/\\(\\S\\s\\)/\\1\\r/g<cr>", { silent = true })
 map("v", "<localleader>,", ":s/,/,\\r/g<cr>", { silent = true })
 
@@ -96,7 +112,12 @@ map("v", "<c-a>", function()
 end)
 map("n", "<leader>a", function()
   vim.fn.setreg("a", "")
-end)
+end, {
+  silent = true,
+  noremap = true,
+  expr = true,
+  desc = "Clear a Register",
+})
 map("i", "<c-a>", "<c-r>A")
 -- <++> 查找替换
 map("i", "<c-l>", "<esc>/<++><cr>c4l")
