@@ -10,6 +10,7 @@ return {
         modified_icon = "● ",
         close_icon = "󰅖",
         separator_style = "thick",
+        always_show_bufferline = true,
         sort_by = "directory",
         hover = {
           enabled = true,

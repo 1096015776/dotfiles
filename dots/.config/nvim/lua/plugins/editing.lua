@@ -158,4 +158,5 @@ return {
     end,
     event = { "BufReadPost" },
   },
+  { "tiagovla/scope.nvim", config = true }
 }

@@ -168,9 +168,14 @@ return {
     { "<c-k>", "<c-k>", ft = "fzf", mode = "t", nowait = true },
     {
       "<leader>,",
-      "<cmd>FzfLua buffers sort_mru=true sort_lastused=true<cr>",
-      desc = "Switch Buffer",
+      ":BufferLineTabRename ",
+      desc = "Rename tab",
     },
+    -- {
+    --   "<leader>,",
+    --   "<cmd>FzfLua buffers sort_mru=true sort_lastused=true<cr>",
+    --   desc = "Switch Buffer",
+    -- },
     { "<leader>/", LazyVim.pick("live_grep"), desc = "Grep (Root Dir)" },
     { "<leader>:", "<cmd>FzfLua command_history<cr>", desc = "Command History" },
     { "<leader><space>", "<c-^>", desc = "last buffer" },
