@@ -21,7 +21,7 @@
       "$1",
       "</script>",
       "",
-      "<style lang=\"scss\" module>",
+      "<style lang=\"scss\" scoped>",
       "</style>"
     ],
     "description": "Vue3组件模板（TS + SCSS模块）"
